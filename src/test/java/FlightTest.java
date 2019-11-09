@@ -16,7 +16,6 @@ public class FlightTest {
     private ArrayList<Passenger> passengers;
 
 
-
     @Before
     public void before(){
 
