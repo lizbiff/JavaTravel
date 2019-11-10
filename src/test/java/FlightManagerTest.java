@@ -39,11 +39,11 @@ public class FlightManagerTest {
         assertEquals(5, flightManager.bagWeightPerPerson());
     }
 
-//    @Test
-//    public void canCalculateHowMuchBaggageWeightIsBooked(){
-//        this.flight.addPassenger(passenger2);
-//        assertEquals(10, flightManager.howMuchBagWeightIsBooked());
-//
-//    }
+    @Test
+    public void canCalculateHowMuchBaggageWeightIsBooked(){
+        this.flight.addPassenger(passenger2);
+        assertEquals(10, flightManager.howMuchBagWeightIsBooked());
+
+    }
 
 }

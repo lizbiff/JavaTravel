@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Flight {
 
     private ArrayList<Passenger> passengers;
+    private Passenger passenger;
     private Plane plane;
     private int flightNumber;
     private String destination;
@@ -41,4 +42,17 @@ public class Flight {
             this.passengers.add(passenger);
         }
     }
+
+    public int totalBags(){
+        int bagCount = 0;
+
+        for (Passenger passenger:this.addPassenger(passenger))
+        {bagCount += this.passenger.howManyBags();
+        }
+
+        return bagCount;
+    }
+
+
+
 }

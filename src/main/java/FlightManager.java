@@ -15,9 +15,10 @@ public class FlightManager {
     public int bagWeightPerPerson() {
         return (plane.baggageCapacity() / plane.getPeopleCapacity());
     }
-//
+
+
 //    public int howMuchBagWeightIsBooked(){
-//        return (bagWeightPerPerson() * this.passengers());
+//        return (bagWeightPerPerson() * this.passengers.totalBags());
 //    }
 
 //    public int bagWeightRemainsPerFlight(){

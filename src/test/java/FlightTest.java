@@ -66,4 +66,15 @@ public class FlightTest {
 
     }
 
+    @Test
+    public void canTotalUpHowManyBagsThereAre(){
+        this.flight.addPassenger(passenger1);
+        this.flight.addPassenger(passenger2);
+        this.flight.addPassenger(passenger3);
+        this.flight.addPassenger(passenger4);
+
+        assertEquals(10, flight.totalBags());
+
+    }
+
 }
