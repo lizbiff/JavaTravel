@@ -20,5 +20,9 @@ public enum Plane {
         return this.loadCapacity;
     }
 
+    public int baggageCapacity(){
+        return (this.loadCapacity / 2);
+    }
+
 
 }

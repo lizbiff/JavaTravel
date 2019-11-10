@@ -22,10 +22,10 @@ public class FlightTest {
 
         passengers = new ArrayList<Passenger>();
 
-        passenger1 = new Passenger("Rachel", 3, 15);
-        passenger2 = new Passenger("Levi", 2, 10);
-        passenger3 = new Passenger("Rebecca", 4, 20);
-        passenger4 = new Passenger("Hannah", 1, 5);
+        passenger1 = new Passenger("Rachel", 3);
+        passenger2 = new Passenger("Levi", 2);
+        passenger3 = new Passenger("Rebecca", 4);
+        passenger4 = new Passenger("Hannah", 1);
 
         flight = new Flight(Plane.BOEINGTEST, 123, "London", "Glasgow", "12:00");
 

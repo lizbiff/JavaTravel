@@ -13,17 +13,16 @@ public class FlightManager {
 
 
     public int bagWeightPerPerson() {
-
-        return (plane.getLoadCapacity() / this.passengers.size());
+        return (plane.baggageCapacity() / plane.getPeopleCapacity());
     }
+//
+//    public int howMuchBagWeightIsBooked(){
+//        return (bagWeightPerPerson() * this.passengers());
+//    }
 
-    public int howMuchBagWeightIsBooked(){
-        return (bagWeightPerPerson() * this.passengers.size());
-    }
-
-    public int bagWeightRemainsPerFlight(){
-        return  (plane.getLoadCapacity() - howMuchBagWeightIsBooked());
-    }
+//    public int bagWeightRemainsPerFlight(){
+//        return  (plane.getLoadCapacity() - howMuchBagWeightIsBooked());
+//    }
 
 
 }

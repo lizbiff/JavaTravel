@@ -2,12 +2,11 @@ public class Passenger {
 
     private String name;
     private int numberOfBags;
-    private int weightOfBags;
 
-    public Passenger(String name, int numberOfBags, int weightOfBags){
+    public Passenger(String name, int numberOfBags){
         this.name = name;
         this.numberOfBags = numberOfBags;
-        this.weightOfBags = weightOfBags;
+
 
     }
 
@@ -21,8 +20,8 @@ public class Passenger {
         return this.numberOfBags;
     }
 
-    public int getWeightOfBags(){
-        return this.weightOfBags;
-    }
+//    public int getWeightOfBags(){
+//        return this.weightOfBags;
+//    }
 }
 

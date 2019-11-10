@@ -9,6 +9,7 @@ public class FlightManagerTest {
 
     private FlightManager flightManager;
     private Flight flight;
+    private Plane plane;
     private Passenger passenger1;
     private Passenger passenger2;
     private Passenger passenger3;
@@ -18,6 +19,8 @@ public class FlightManagerTest {
     @Before
     public void before(){
 
+        flightManager = new FlightManager(Plane.BOEING747);
+
         passengers = new ArrayList<Passenger>();
 
         passenger1 = new Passenger("Rachel", 3);
@@ -25,7 +28,8 @@ public class FlightManagerTest {
         passenger3 = new Passenger("Rebecca", 4);
         passenger4 = new Passenger("Hannah", 1);
 
-        flight = new Flight(Plane.BOEING747, 123, "London", "Glasgow", "12:00");
+        flight = new Flight(Plane.BOEINGTEST, 123, "London", "Glasgow", "12:00");
+
 
     }
 
@@ -35,5 +39,11 @@ public class FlightManagerTest {
         assertEquals(5, flightManager.bagWeightPerPerson());
     }
 
+//    @Test
+//    public void canCalculateHowMuchBaggageWeightIsBooked(){
+//        this.flight.addPassenger(passenger2);
+//        assertEquals(10, flightManager.howMuchBagWeightIsBooked());
+//
+//    }
 
 }
