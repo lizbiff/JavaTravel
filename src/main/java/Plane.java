@@ -1,6 +1,8 @@
 public enum Plane {
 
-    BOEING747(5, 1000);
+    BOEING747(100, 1000),
+    BOEINGTEST(5, 1000);
+
 
     private final int peopleCapacity;
     private final int loadCapacity;
